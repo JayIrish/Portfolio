@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../utilitaires/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css"
+    />
+    <script src="../utilitaires/jquery-3.6.0.min.js"></script>
+    <script src="../utilitaires/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="../js/restaurant.js"></script>
+    <script src="../js/facturation.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- <script src="client/js/membres.js"></script>
+    <script src="client/js/connexion.js"></script> -->
+  </head>
+
+  <body id="pageCommandes" onLoad="initialiser(), facture()">
+    <!-- Menu de navigation -->
+    <nav class="navbar navbar-expand-lg bgnavbar">
+      <div class="container-fluid">
+        <a href="../../index.html">
+        <img class="imglogo" src="../images/logo.jpg"  /></a>
+        <div class="name">Jay's House</div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button class="ret" data-bs-toggle="modal" data-bs-target="#modalEnreg">
+            <a href="../../index.html">Quitter</a>
+        </button>
+      </div>
+    </nav>
+    <!-- Fin du menu de navigation -->
+    <br /><br /><br />
+    <div class="container-fluid">
+      <div class="row cardRow">
+        <div class="card col-lg-4 carteChoix">
+          <img
+            id="imgEntree"
+            src=""
+            class="card-img-top thumbnail"
+            alt="entrée"
+          />
+          <div class="card-body">
+            <h3 id="nomEntree" class="card-title"></h3>
+            <h4 id="prixEntree"></h4>
+            <label for="selEntree" class="form-label">Choix d'entrée</label>
+            <select
+              id="selEntree"
+              class="form-select"
+              aria-label="Default select example"
+              onchange="choixEntree(), facture()"
+            ></select>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="card col-lg-4 carteChoix">
+          <img
+            id="imgRepas"
+            src=""
+            class="card-img-top thumbnail"
+            alt="repas"
+          />
+          <div class="card-body">
+            <h3 id="nomRepas" class="card-title"></h3>
+            <h4 id="prixRepas"></h4>
+            <!-- <a href="#" class="btn btn-primary">Acheter</a> -->
+            <label for="selRepas" class="form-label">Choix de repas</label>
+            <select
+              id="selRepas"
+              class="form-select"
+              aria-label="Default select example"
+              onchange="choixRepas(), facture()"
+            ></select>
+          </div>
+        </div>
+        <div id="containerTable"></div>
+      </div>
+    </div>
+    <br></br>
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Labo 2</string>
+    <string name="lister">Lister</string>
+    <string name="categ">Catégorie</string>
+    <string name="total">Total</string>
+    <string name="stitre">Gestion Inventaire</string>
+    <string-array name="categories">
+        <item>Sport</item>
+        <item>Saloon</item>
+        <item>MPV</item>
+        <item>VTT</item>
+    </string-array>
+</resources>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#142B65"
+    android:background="#aab1c2"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Black Marble"
+            android:src="@drawable/black_marble"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewBienvenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/bienvenue"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#d7ae04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenue" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenue">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d"
+            >
+
+            <TextView
+                android:id="@+id/textViewNom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Nom"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextNom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="66"
+                android:background="@color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textViewPrenom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Prenom"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextPrenom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="66"
+                android:background="@color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textViewSexe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Sexe"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="66">
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#4f0481"
+                    android:text="@string/Femme" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonHomme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#4f0481"
+                    android:text="@string/Homme" />
+            </RadioGroup>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textFonction"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Fonction"
+                android:minHeight="40dp"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                style="@android:style/Widget.Spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="66"
+                android:entries="@array/Fonctions"
+                android:prompt="@string/ChoixFonction" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <LinearLayout android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewTravail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:text="@string/Travail"
+                    android:minHeight="40dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="66"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxJournalier"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Journalier" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxTPa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/TPa" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxTPl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/TPl" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxOcc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Occ" />
+                </TableRow>
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textViewCom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Com"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextCom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="66"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:labelFor="@id/editTextCom"
+                android:minHeight="82dp"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/buttonEnv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:text="@string/Envoyer"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonEff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:text="@string/Effacer"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

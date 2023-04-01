@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Labo_1_P_2</string>
+
+    <string-array name="provinces">
+        <item>Colombie-Britannique</item>
+        <item>Alberta</item>
+        <item>Saskatchewan</item>
+        <item>Manitoba</item>
+        <item>Ontario</item>
+        <item>Québec</item>
+        <item>Terre-Neuve-et-Labrador</item>
+        <item>Nouveau-Brunswick</item>
+        <item>Nouvelle-Écosse</item>
+        <item>Île-du-Prince-Édouard</item>
+    </string-array>
+
+    <string-array name="Colombie_Britannique">
+        <item>Victoria*</item>
+        <item>Dawson Creek</item>
+        <item>Maple Bridge</item>
+    </string-array>
+
+    <string-array name="Alberta">
+        <item>Edmonton*</item>
+        <item>Lethbridge</item>
+        <item>Calgary</item>
+    </string-array>
+
+    <string-array name="Saskatchewan">
+        <item>Regina*</item>
+        <item>Flin Flon</item>
+        <item>Meadow Lake</item>
+    </string-array>
+
+    <string-array name="Manitoba">
+        <item>Winnipeg*</item>
+        <item>Flin Flon</item>
+        <item>Dauphin</item>
+    </string-array>
+
+    <string-array name="Ontario">
+        <item>Toronto*</item>
+        <item>Ottawa</item>
+        <item>Kitchener</item>
+    </string-array>
+
+    <string-array name="Québec">
+        <item>Québec*</item>
+        <item>L\'Assomption</item>
+        <item>Joliette</item>
+    </string-array>
+
+    <string-array name="Terre_Neuve_et_Labrador">
+        <item>Saint-Jean de Terre-Neuve*</item>
+        <item>Mount Pearl</item>
+        <item>Arnold\'s cove</item>
+    </string-array>
+
+    <string-array name="Nouveau_Brunswick">
+        <item>Fredericton*</item>
+        <item>Bathurst</item>
+        <item>Dieppe</item>
+
+    </string-array>
+
+    <string-array name="Nouvelle_Écosse">
+        <item>Halifax*</item>
+        <item>Cape Breton</item>
+        <item>Queens</item>
+    </string-array>
+
+    <string-array name="Île_du_Prince_Édouard">
+        <item>Charlottetown*</item>
+        <item>Summerside</item>
+    </string-array>
+
+    <string-array name="population">
+        <item><b>5,000,879 hab.</b></item>  <!--Colombie-Britannique-->
+        <item>4,262,635 hab.</item> <!--Alberta-->
+        <item>1,132,505 hab.</item> <!--Saskatchewan-->
+        <item>1,342,153 hab.</item> <!--Manitoba-->
+        <item>14,223,942 hab.</item> <!--Ontario-->
+        <item>8,501,833 hab.</item> <!--Québec-->
+        <item>510,550 hab.</item> <!--Terre-Neuve-et-Labrador-->
+        <item>775,610 hab.</item> <!--Nouveau-Brunswick-->
+        <item>969,383 hab.</item> <!--Nouvelle-Écosse-->
+        <item>154,331 hab.</item> <!--Île-du-Prince-Édouard-->
+    </string-array>
+
+</resources>

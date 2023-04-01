@@ -1,0 +1,75 @@
+.bodybg{
+background-image: url('../images/BlueBK.jpg');
+background-size: cover;
+}
+.tablec{
+    border: 4px solid rgb(77, 76, 76);
+    background-color: rgba(130, 132, 255, 0.212);
+}
+.input{
+    width: 300px;
+}
+.submit{
+}
+.reset{
+}
+.bookimg{
+    position: fixed;
+    bottom: 40;
+
+    
+}
+.w3link{
+    color: orange;
+    position: fixed;
+    bottom: 10;
+}
+.center{
+    text-align: center;
+}
+.duchemolebg{
+    background-image: url('../images/bureau.png');
+    background-size: cover;
+}
+.msgcab{
+    background-color: rgba(79, 104, 38, 0.5);
+    width: 50%;
+    float: left;
+    font-size: 24pt;
+}
+.hrsouv{
+    background-color: rgba(184, 207, 241, 0.5);
+    width: 50%;
+    float: right;
+    font-size: 24pt;
+}
+div.a{
+    font-size: 20pt;
+    background-color: rgba(79, 104, 38, 0.5);
+    height: 300px;
+}
+.tabled{
+    background-color: rgba(184, 207, 241, 0.5);
+    float: right;
+    width: 50%;
+    border: 2px solid;
+}
+.td1{
+    height: 40px;
+    text-align: center;
+    border: 2px solid;
+    font-weight:bolder;
+    font-size: 16pt;
+}
+.td2{
+    text-align: center;
+    border: 2px solid;
+    font-size: 16pt;
+}
+.imgdoc{
+    width: fit-content;
+    height:fit-content;
+    float: fixxed
+    
+
+}

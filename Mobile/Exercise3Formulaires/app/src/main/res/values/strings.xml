@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Exercise-3-Formulaires</string>
+    <string name="bienvenue"><big><b><u>Bienvenue!</u></b></big></string>
+    <string name="merci"><big><b><u>Merci!</u></b></big></string>
+    <string name="verif"><b><u>Veuillez contacter un administrateur si il y a eu erreure dans les informations fournis</u></b></string>
+    <string name="Nom"><big><b>Nom</b></big></string>
+    <string name="Prenom"><big><b>Prénom</b></big></string>
+    <string name="Sexe"><big><b>SEXE</b></big></string>
+    <string name="Femme"><big><b>Femme</b></big></string>
+    <string name="Homme"><big><b>Homme</b></big></string>
+    <string name="Fonction"><big><b>Fonction</b></big></string>
+    <string name="Com"><big><b>Commentaires</b></big></string>
+    <string name="Envoyer"><b>Envoyer</b></string>
+    <string name="Effacer"><b>Effacer</b></string>
+    <string name="Retour"><b>Retour</b></string>
+    <string name="Journalier"><b>Journalier</b></string>
+    <string name="TPl"><b>Temps plein</b></string>
+    <string name="TPa"><b>Temps partiel</b></string>
+    <string name="Occ"><b>Occasionnel</b></string>
+    <string name="ChoixFonction">Choisissez votre fonction</string>
+    <string name="erreureFonction">Contactez un administrateur!!!</string>
+    <string name="my_image_description">Black-Marble</string>
+    <string-array name="Fonctions">
+        <item>Enseignant</item>
+        <item>Étudiant</item>
+        <item>Administration</item>
+    </string-array>
+    <string name="Travail"><big><b>Type de travail</b></big></string>
+</resources>

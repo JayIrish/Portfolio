@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#142B65"
+    android:background="#aab1c2"
+    tools:context=".LandingActivity">
+
+    <TextView
+        android:id="@+id/textViewMerci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/merci"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#4f0481"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verif"
+        android:textSize="16sp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMerci" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMerci">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textViewNom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Nom"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewNomClient"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="66"
+                android:gravity="center"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textViewPrenom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Prenom"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewPrenomClient"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="66"
+                android:gravity="center"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textViewSexe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Sexe"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewSexeClient"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="66"
+                android:gravity="center"
+                android:text="" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textFonction"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Fonction"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewFonctionClient"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="66"
+                android:gravity="center"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textViewTravail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+
+                android:gravity="center"
+                android:text="@string/Travail"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewTravailClient"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="66"
+                android:gravity="center" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#66829d">
+
+            <TextView
+                android:id="@+id/textViewCom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="@string/Com"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewComClient"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="66"
+                android:gravity="center"
+                android:text="" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Retour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.754" />
+</androidx.constraintlayout.widget.ConstraintLayout>

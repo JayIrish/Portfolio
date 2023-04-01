@@ -1,0 +1,232 @@
+header {
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background-color: rgba(241, 166, 67, 0.808);
+}
+
+.separateur {
+  width: 100%;
+}
+
+.headerMusique {
+  position: sticky;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background-color: rgb(34, 34, 34);
+}
+
+.logo {
+  color: rgb(73, 104, 151);
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #fae6d1;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+}
+
+.navbar li {
+  margin-top: 18px;
+  list-style: none;
+  font-size: x-large;
+}
+
+.navbar a {
+  color: rgb(73, 104, 151);
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 700;
+  display: flex;
+}
+
+header .navbar li a:hover {
+  color: rgb(54, 78, 114);
+  border-bottom: 2px solid rgb(54, 78, 114);
+}
+
+.headerMusique .navbar li a:hover {
+  color: rgb(241, 241, 241);
+  border-bottom: 2px solid rgb(241, 241, 241);
+}
+
+.AccSection1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/background_section1.webp);
+  background-size: cover;
+}
+
+.AccSection1 .contenu {
+  text-align: center;
+}
+
+.AccSection1 .contenu h2 {
+  color: #d87710;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.contenu h3:nth-child(2) {
+  color: rgb(54, 78, 114);
+  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: -20px;
+}
+
+.contenu p:nth-child(3) {
+  color: rgb(54, 63, 114);
+  font-size: 1em;
+}
+
+.logoMaisonneuve {
+  padding-top: 30px;
+  width: 50%;
+}
+
+.btn1 {
+  font-size: 1em;
+  color: white;
+  background: #fb911f;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+.AccSection2 {
+  background-color: rgb(255, 252, 250);
+  border-top: 1px solid;
+  border-color: #d87710;
+}
+.AccSection2 h2 {
+  color: rgb(54, 78, 114);
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-top: 100px;
+  margin-bottom: -50px;
+  text-align: center;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  border: 20px solid;
+  border-color: white;
+  box-shadow: 10px 10px 10px 10px #888888;
+  margin-bottom: 30px;
+}
+
+.MusIntro {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/background\ musique\ 2.jpg);
+  margin-right: 50px;
+  background-size: cover;
+}
+
+.MusIntro ul {
+  font-size: x-large;
+  z-index: 1;
+  text-align: right;
+  margin-top: 100px;
+}
+
+.MusIntro li {
+  margin-top: 10px;
+  margin-right: 150px;
+  text-transform: uppercase;
+}
+
+.row {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.style1 {
+  background-image: url(../images/background_section1.webp);
+  background-size: cover;
+}
+
+.loisirTitle {
+  margin-top: 150px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.tableTitre {
+  text-align: center;
+  color: rgb(248, 157, 60);
+}
+
+.photoTable {
+  width: 300px;
+}
+
+td.sousTitre1 {
+  text-align: center;
+}
+
+td.sousTitre2 {
+  text-align: center;
+}
+
+td.sousTitre3 {
+  text-align: center;
+}
+
+.autresTitle {
+  text-align: center;
+  text-decoration-line: underline;
+}
+.autresMain {
+  background-color: rgb(77, 195, 222);
+}
+
+div.select {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label.center {
+  size: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+iframe.autres {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 1px solid;
+  width: 75%;
+  height: 500px;
+}
